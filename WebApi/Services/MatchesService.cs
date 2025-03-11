@@ -87,9 +87,9 @@ namespace Super_Cartes_Infinies.Services
             return null;
         }
 
-        public async Task<bool> StopJoiningMatch(string userId)
+        public async Task<bool> StopJoiningMatch(string connectionId)
         {
-            bool stoppedWaiting = await _waitingUserService.StopWaitingUser(userId);
+            bool stoppedWaiting = await _waitingUserService.StopWaitingUser(connectionId);
 
             return stoppedWaiting;
         }

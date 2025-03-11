@@ -27,13 +27,13 @@
             _semaphore = new SemaphoreSlim(1);
         }
 
-        public async Task<bool> StopWaitingUser(string userId)
+        public async Task<bool> StopWaitingUser(string connectionId)
         {
             await _semaphore.WaitAsync();
             bool stoppedWaiting = false;
-            if (_userAConnectionId == userId)
+            if (_userAConnectionId == connectionId)
             {
-                _userAConnectionId = null;
+                _userAId = null;
                 _userAConnectionId = null;
                 stoppedWaiting = true;
             }
