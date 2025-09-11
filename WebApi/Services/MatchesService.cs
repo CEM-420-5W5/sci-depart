@@ -1,9 +1,9 @@
-﻿using Super_Cartes_Infinies.Combat;
-using Super_Cartes_Infinies.Data;
-using Super_Cartes_Infinies.Models;
-using Super_Cartes_Infinies.Models.Dtos;
+﻿using Models.Data;
+using Models.Models;
+using Models.Models.Dtos;
+using WebApi.Combat;
 
-namespace Super_Cartes_Infinies.Services
+namespace WebApi.Services
 {
 	public class MatchesService
     {

@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Super_Cartes_Infinies.Data;
-using Super_Cartes_Infinies.Models;
-using Super_Cartes_Infinies.Services;
+using Models.Data;
+using Models.Models;
+using WebApi.Services;
 
-namespace Super_Cartes_Infinies.Controllers
+namespace WebApi.Controllers
 {
 
     [Route("api/[controller]/[action]")]

@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using Super_Cartes_Infinies.Models;
+using Models.Models.ViewModels;
 
 namespace Super_Cartes_Infinies.Controllers;
 

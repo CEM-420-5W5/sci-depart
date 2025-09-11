@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Super_Cartes_Infinies.Models.Dtos
+namespace Models.Models.Dtos
 {
     public class JoiningMatchData
     {

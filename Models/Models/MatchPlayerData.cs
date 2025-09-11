@@ -1,6 +1,6 @@
 ﻿using Models.Interfaces;
 
-namespace Super_Cartes_Infinies.Models
+namespace Models.Models
 {
 	public class MatchPlayerData : IModel
     {
@@ -15,10 +15,10 @@ namespace Super_Cartes_Infinies.Models
 		{
             PlayerId = playerId;
             Health = STARTING_HEALTH;
-            CardsPile = new List<PlayableCard>();
-            Hand = new List<PlayableCard>();
-            BattleField = new List<PlayableCard>();
-            Graveyard = new List<PlayableCard>();
+            CardsPile = [];
+            Hand = [];
+            BattleField = [];
+            Graveyard = [];
         }
 
         public MatchPlayerData(Player p, IEnumerable<Card> cardList) : this(p.Id)

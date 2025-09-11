@@ -1,9 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using Super_Cartes_Infinies.Data;
-using Super_Cartes_Infinies.Models;
+using Models.Data;
+using Models.Models;
 
-namespace Super_Cartes_Infinies.Services
+namespace WebApi.Services
 {
 	public class PlayersService
     {

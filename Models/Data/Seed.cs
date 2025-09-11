@@ -1,9 +1,7 @@
-﻿using System;
-using System.Drawing;
-using Microsoft.AspNetCore.Identity;
-using Super_Cartes_Infinies.Models;
+﻿using Microsoft.AspNetCore.Identity;
+using Models.Models;
 
-namespace Super_Cartes_Infinies.Data
+namespace Models.Data
 {
     public class Seed
     {
@@ -11,7 +9,8 @@ namespace Super_Cartes_Infinies.Data
 
         public static Card[] SeedCards()
         {
-            return new Card[] {
+            return
+            [
                 new Card
                 {
                     Id = 1,
@@ -93,13 +92,13 @@ namespace Super_Cartes_Infinies.Data
                     Cost = 2,
                     ImageUrl = "https://cdn.theatlantic.com/thumbor/fOZjgqHH0RmXA1A5ek-yDz697W4=/133x0:2091x1020/1200x625/media/img/mt/2015/12/RTRD62Q/original.jpg"
                 }
-            };
+            ];
         }
 
         public static IdentityUser[] SeedUsers()
         {
-            var hasher = new PasswordHasher<IdentityUser>();
-            IdentityUser admin = new IdentityUser
+            PasswordHasher<IdentityUser> hasher = new();
+            IdentityUser admin = new()
             {
                 Id = "11111111-1111-1111-1111-111111111111",
                 UserName = "admin@admin.com",
@@ -113,34 +112,35 @@ namespace Super_Cartes_Infinies.Data
                 LockoutEnabled = true
             };
 
-            return new IdentityUser[] { admin };
+            return [admin];
         }
 
         public static IdentityRole[] SeedRoles()
         {
-            IdentityRole adminRole = new IdentityRole
+            IdentityRole adminRole = new()
             {
                 Id = "11111111-1111-1111-1111-111111111112",
                 Name = ApplicationDbContext.ADMIN_ROLE,
                 NormalizedName = ApplicationDbContext.ADMIN_ROLE.ToUpper()
             };
 
-            return new IdentityRole[] { adminRole };
+            return [adminRole];
         }
 
         public static IdentityUserRole<string>[] SeedUserRoles()
         {
-            IdentityUserRole<string> userAdmin = new IdentityUserRole<string>
+            IdentityUserRole<string> userAdmin = new()
             {
                 RoleId = "11111111-1111-1111-1111-111111111112",
                 UserId = "11111111-1111-1111-1111-111111111111"
             };
-            return new IdentityUserRole<string>[] { userAdmin };
+            return [userAdmin];
         }
 
         public static IdentityUser[] SeedTestUsers()
         {
-            return new IdentityUser[] {
+            return
+            [
                 new IdentityUser()
                 {
                     Id = "User1Id"
@@ -149,12 +149,13 @@ namespace Super_Cartes_Infinies.Data
                 {
                 Id = "User2Id"
                 }
-            };
+            ];
         }
 
         public static Player[] SeedTestPlayers()
         {
-            return new Player[] {
+            return
+            [
                 new Player
                 {
                     Id = 1,
@@ -168,7 +169,7 @@ namespace Super_Cartes_Infinies.Data
                     Name = "Test player 2",
                     UserId = "User2Id"
                 }
-            };
+            ];
         }
     }
 }

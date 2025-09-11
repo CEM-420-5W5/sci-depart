@@ -1,4 +1,4 @@
-﻿namespace Super_Cartes_Infinies.Models;
+﻿namespace Models.Models.ViewModels;
 
 public class ErrorViewModel
 {

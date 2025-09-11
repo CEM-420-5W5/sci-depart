@@ -1,6 +1,6 @@
 ﻿using System.Text.Json.Serialization;
 
-namespace Super_Cartes_Infinies.Combat
+namespace WebApi.Combat
 {
     [JsonDerivedType(typeof(DrawCardEvent))]
     [JsonDerivedType(typeof(EndMatchEvent))]

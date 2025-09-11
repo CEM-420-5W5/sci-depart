@@ -1,7 +1,6 @@
-﻿using System.ComponentModel;
-using Models.Interfaces;
+﻿using Models.Interfaces;
 
-namespace Super_Cartes_Infinies.Models
+namespace Models.Models
 {
     public class Card:IModel
 	{

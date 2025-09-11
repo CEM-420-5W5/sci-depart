@@ -1,16 +1,17 @@
-﻿using Super_Cartes_Infinies.Models;
+﻿using Models.Models;
 
-namespace Super_Cartes_Infinies.Combat
+namespace WebApi.Combat
 {
     public class PlayerStartTurnEvent : MatchEvent
     {
-        public override string EventType { get { return "PlayerStartTurn"; } }
+        public override string EventType => "PlayerStartTurn";
+
         public int PlayerId { get; set; }
         // L'évènement lorsqu'un joueur débutte son tour
         public PlayerStartTurnEvent(MatchPlayerData playerData, int nbManaPerTurn)
         {
-            this.PlayerId = playerData.PlayerId;
-            this.Events = new List<MatchEvent>();
+            PlayerId = playerData.PlayerId;
+            Events = [];
 
             // TODO: Faire piger UNE carte (celle qui est pigé à chaque début de tour)
             // TODO: Faire gagner le Mana selon la configuration

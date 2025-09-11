@@ -1,6 +1,6 @@
 ﻿using Models.Interfaces;
 
-namespace Super_Cartes_Infinies.Models
+namespace Models.Models
 {
 	public class Match : IModel
     {

@@ -1,17 +1,19 @@
-﻿using Super_Cartes_Infinies.Models;
+﻿using Models.Models;
 
-namespace Super_Cartes_Infinies.Combat
+namespace WebApi.Combat
 {
     public class StartMatchEvent : MatchEvent
     {
-        public override string EventType { get { return "StartMatch"; } }
+        public override string EventType => "StartMatch";
+
         public StartMatchEvent(Match match, MatchPlayerData currentPlayerData, MatchPlayerData opposingPlayerData, int nbCardsToDraw, int nbManaPerTurn)
         {
-            Events = new List<MatchEvent> { };
+            Events =
+            [
+                new PlayerStartTurnEvent(currentPlayerData, nbManaPerTurn)
+            ];
 
             // TODO: Faire piger le nombre de cartes de la configuration (nbCardsToDraw) au DEUX joueurs
-
-            Events.Add(new PlayerStartTurnEvent(currentPlayerData, nbManaPerTurn));
         }
     }
 }

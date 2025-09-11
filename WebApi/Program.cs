@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using Super_Cartes_Infinies.Data;
-using Super_Cartes_Infinies.Hubs;
-using Super_Cartes_Infinies.Services;
+using Models.Data;
+using WebApi.Hubs;
+using WebApi.Services;
 
-var builder = WebApplication.CreateBuilder(args);
+WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+string connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseSqlServer(connectionString);
@@ -23,7 +23,7 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Injection de dépendance
+// Injection de dï¿½pendance
 builder.Services.AddScoped<PlayersService>();
 builder.Services.AddScoped<CardsService>();
 builder.Services.AddSingleton<WaitingUserService>();
@@ -38,7 +38,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var app = builder.Build();
+WebApplication app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

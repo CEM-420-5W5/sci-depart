@@ -1,7 +1,6 @@
-﻿using Super_Cartes_Infinies.Data;
-using Super_Cartes_Infinies.Models;
+﻿using Models.Data;
 
-namespace Super_Cartes_Infinies.Services
+namespace WebApi.Services
 {
 	public class MatchConfigurationService
     {

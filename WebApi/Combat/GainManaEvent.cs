@@ -1,11 +1,10 @@
-﻿using Microsoft.Extensions.Logging;
-using Super_Cartes_Infinies.Models;
+﻿using Models.Models;
 
-namespace Super_Cartes_Infinies.Combat
+namespace WebApi.Combat
 {
     public class GainManaEvent : MatchEvent
     {
-        public override string EventType { get { return "GainMana"; } }
+        public override string EventType => "GainMana";
         public int Mana { get; set; }
         public int PlayerId { get; set; }
 

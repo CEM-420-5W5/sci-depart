@@ -1,9 +1,9 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Super_Cartes_Infinies.Models;
+using Models.Models;
 
-namespace Super_Cartes_Infinies.Data;
+namespace Models.Data;
 
 public class ApplicationDbContext : IdentityDbContext
 {

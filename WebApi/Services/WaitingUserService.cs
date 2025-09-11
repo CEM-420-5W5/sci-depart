@@ -1,4 +1,4 @@
-﻿namespace Super_Cartes_Infinies.Services
+﻿namespace WebApi.Services
 {
     public class UsersReadyForAMatch
     {

@@ -1,11 +1,10 @@
-﻿using Microsoft.Extensions.Logging;
-using Super_Cartes_Infinies.Models;
+﻿using Models.Models;
 
-namespace Super_Cartes_Infinies.Combat
+namespace WebApi.Combat
 {
     public class EndMatchEvent : MatchEvent
     {
-        public override string EventType { get { return "EndMatch"; } }
+        public override string EventType => "EndMatch";
         public int WinningPlayerId { get; set; }
 
         public EndMatchEvent(Match match, MatchPlayerData winningPlayerData, MatchPlayerData losingPlayerData)
@@ -21,9 +20,13 @@ namespace Super_Cartes_Infinies.Combat
 
             string userId;
             if (match.PlayerDataA.PlayerId == winningPlayerData.PlayerId)
+            {
                 userId = match.UserAId;
+            }
             else
+            {
                 userId = match.UserBId;
+            }
 
             match.WinnerUserId = userId;
         }

@@ -1,18 +1,14 @@
-﻿using System;
+﻿using System.Security.Claims;
 using Microsoft.AspNetCore.Mvc;
-using Super_Cartes_Infinies.Data;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Authorization;
-using System.Security.Claims;
-using Super_Cartes_Infinies.Services;
-using Super_Cartes_Infinies.Models;
+using Models.Models;
+using WebApi.Services;
 
-namespace Super_Cartes_Infinies.Controllers
+namespace WebApi.Controllers
 {
     [ApiController]
     public abstract class BaseController : ControllerBase
     {
-        public PlayersService playersService;
+        private PlayersService playersService;
 
         public BaseController(PlayersService playersService)
         {

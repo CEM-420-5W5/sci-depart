@@ -1,10 +1,10 @@
-﻿using Super_Cartes_Infinies.Models;
+﻿using Models.Models;
 
-namespace Super_Cartes_Infinies.Combat
+namespace WebApi.Combat
 {
     public class DrawCardEvent : MatchEvent
     {
-        public override string EventType { get { return "DrawCard"; } }
+        public override string EventType => "DrawCard";
         public int PlayableCardId { get; set; }
         public int PlayerId { get; set; }
 
@@ -12,7 +12,7 @@ namespace Super_Cartes_Infinies.Combat
         {
             if(playerData.CardsPile.Count > 0) {
                 int lastElementIndex = playerData.CardsPile.Count() - 1;
-                var playableCard = playerData.CardsPile[lastElementIndex];
+                PlayableCard playableCard = playerData.CardsPile[lastElementIndex];
 
                 PlayerId = playerData.PlayerId;
                 PlayableCardId = playableCard.Id;
