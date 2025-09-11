@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Super Cartes Infinies", "Super Cartes Infinies\Super Cartes Infinies.csproj", "{EED0E3D2-DCF5-4797-9A58-E6736455A951}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Admin", "Admin\Admin.csproj", "{EED0E3D2-DCF5-4797-9A58-E6736455A951}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{75BF56CD-E3A9-41CD-A655-69DDB53C1366}"
 EndProject
