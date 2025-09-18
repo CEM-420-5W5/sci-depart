@@ -40,6 +40,30 @@ public class ApplicationDbContext : IdentityDbContext
             .HasOne(m => m.PlayerDataB)
             .WithMany()
             .OnDelete(DeleteBehavior.NoAction);
+
+        builder.Entity<PlayableCard>()
+            .HasOne(pc => pc.CardsPileOwner)
+            .WithMany(mp => mp.CardsPile)
+            .HasForeignKey(pc => pc.CardsPileOwnerId)
+            .OnDelete(DeleteBehavior.NoAction);
+
+        builder.Entity<PlayableCard>()
+            .HasOne(pc => pc.HandOwner)
+            .WithMany(mp => mp.Hand)
+            .HasForeignKey(pc => pc.HandOwnerId)
+            .OnDelete(DeleteBehavior.NoAction);
+
+        builder.Entity<PlayableCard>()
+            .HasOne(pc => pc.BattleFieldOwner)
+            .WithMany(mp => mp.BattleField)
+            .HasForeignKey(pc => pc.BattleFieldOwnerId)
+            .OnDelete(DeleteBehavior.NoAction);
+
+        builder.Entity<PlayableCard>()
+            .HasOne(pc => pc.GraveyardOwner)
+            .WithMany(mp => mp.Graveyard)
+            .HasForeignKey(pc => pc.GraveyardOwnerId)
+            .OnDelete(DeleteBehavior.NoAction);
         // Fin de Fluent API
     }
 
@@ -51,4 +75,3 @@ public class ApplicationDbContext : IdentityDbContext
 
     public DbSet<MatchPlayerData> MatchPlayersData { get; set; } = default!;
 }
-

@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.SignalR;
 
 namespace WebApi.Hubs;
 
-[Authorize]
+// [Authorize] TODO à décommenter pendant le merge du TP1
 public class MatchHub : Hub
 {
     public MatchHub()
