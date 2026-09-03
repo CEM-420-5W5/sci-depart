@@ -101,11 +101,11 @@ namespace Models.Data
             IdentityUser admin = new()
             {
                 Id = "11111111-1111-1111-1111-111111111111",
-                UserName = "admin@admin.com",
-                Email = "admin@admin.com",
+                UserName = "admin@sci.com",
+                Email = "admin@sci.com",
                 // La comparaison d'identity se fait avec les versions normalisés
-                NormalizedEmail = "ADMIN@ADMIN.COM",
-                NormalizedUserName = "ADMIN@ADMIN.COM",
+                NormalizedEmail = "ADMIN@SCI.COM",
+                NormalizedUserName = "ADMIN@SCI.COM",
                 EmailConfirmed = true,
                 // On encrypte le mot de passe
                 PasswordHash = hasher.HashPassword(null, "Passw0rd!"),
@@ -119,7 +119,7 @@ namespace Models.Data
         {
             IdentityRole adminRole = new()
             {
-                Id = "11111111-1111-1111-1111-111111111112",
+                Id = "11111111-1111-1111-1111-1111111111A1",
                 Name = ApplicationDbContext.ADMIN_ROLE,
                 NormalizedName = ApplicationDbContext.ADMIN_ROLE.ToUpper()
             };
@@ -131,7 +131,7 @@ namespace Models.Data
         {
             IdentityUserRole<string> userAdmin = new()
             {
-                RoleId = "11111111-1111-1111-1111-111111111112",
+                RoleId = "11111111-1111-1111-1111-1111111111A1",
                 UserId = "11111111-1111-1111-1111-111111111111"
             };
             return [userAdmin];

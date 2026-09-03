@@ -54,8 +54,8 @@ namespace Models.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "11111111-1111-1111-1111-111111111112",
-                            ConcurrencyStamp = "343bfee6-7f7f-4d6d-b050-f70ab63b2889",
+                            Id = "11111111-1111-1111-1111-1111111111A1",
+                            ConcurrencyStamp = "68b896d6-93d5-4011-b15b-d48a3b1f5ead",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -155,38 +155,38 @@ namespace Models.Migrations
                         {
                             Id = "11111111-1111-1111-1111-111111111111",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "f3945c03-0b06-4786-81ec-c5a406059950",
-                            Email = "admin@admin.com",
+                            ConcurrencyStamp = "c071c0ad-5c59-4b98-8d67-6bab45c9af78",
+                            Email = "admin@sci.com",
                             EmailConfirmed = true,
                             LockoutEnabled = true,
-                            NormalizedEmail = "ADMIN@ADMIN.COM",
-                            NormalizedUserName = "ADMIN@ADMIN.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAELTbBapV3pnRtkbFSpsTnu/h77R16Ff3Usikn+7QklJTK2qN86WP7Mzn1Ax9SgO81g==",
+                            NormalizedEmail = "ADMIN@SCI.COM",
+                            NormalizedUserName = "ADMIN@SCI.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEJbuAeRZ+by/8iWz/ZwNVG8gmPcxWJvZhFEstozk8/5/GnXNIAI+SGzEsudvumqdDw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "80536c45-dcbf-46d6-8dbd-063db81ce12f",
+                            SecurityStamp = "9b15c52f-8b03-409d-a9f4-10e08a8b8d25",
                             TwoFactorEnabled = false,
-                            UserName = "admin@admin.com"
+                            UserName = "admin@sci.com"
                         },
                         new
                         {
                             Id = "User1Id",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "3d91cc90-8708-4af2-95ea-a0f80b38d39b",
+                            ConcurrencyStamp = "8d09ebb1-eabe-4baa-a485-6f2a674d4ea1",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "196497f0-0474-400f-b995-8730ea439137",
+                            SecurityStamp = "89057ab9-ca24-4f69-8327-80ac30344a22",
                             TwoFactorEnabled = false
                         },
                         new
                         {
                             Id = "User2Id",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d4fd0a5d-e5ec-4607-8e7e-05cc37726035",
+                            ConcurrencyStamp = "33134217-a8a4-4831-bea2-49deb15ed51a",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4642cedd-9a34-4258-8ebf-ee159d34dcd4",
+                            SecurityStamp = "6bf310e2-d746-4128-93b8-0d08b275199c",
                             TwoFactorEnabled = false
                         });
                 });
@@ -258,7 +258,7 @@ namespace Models.Migrations
                         new
                         {
                             UserId = "11111111-1111-1111-1111-111111111111",
-                            RoleId = "11111111-1111-1111-1111-111111111112"
+                            RoleId = "11111111-1111-1111-1111-1111111111A1"
                         });
                 });
 
