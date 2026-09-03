@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Models.Migrations
 {
     /// <inheritdoc />
-    public partial class Initial : Migration
+    public partial class initiale : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -115,8 +115,8 @@ namespace Models.Migrations
                 name: "AspNetUserLogins",
                 columns: table => new
                 {
-                    LoginProvider = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    ProviderKey = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    LoginProvider = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
+                    ProviderKey = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
                     ProviderDisplayName = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },
@@ -160,8 +160,8 @@ namespace Models.Migrations
                 columns: table => new
                 {
                     UserId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    LoginProvider = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Name = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    LoginProvider = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
+                    Name = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
                     Value = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
@@ -293,16 +293,16 @@ namespace Models.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "11111111-1111-1111-1111-111111111112", null, "admin", "ADMIN" });
+                values: new object[] { "11111111-1111-1111-1111-111111111112", "343bfee6-7f7f-4d6d-b050-f70ab63b2889", "admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "11111111-1111-1111-1111-111111111111", 0, "b18f6b3d-2c44-42a1-9f4f-90b96d32005a", "admin@admin.com", true, true, null, "ADMIN@ADMIN.COM", "ADMIN@ADMIN.COM", "AQAAAAIAAYagAAAAEPLZaG8acg3Dmw29tsDO3evWmgnbcNyb9mcKnTsI6/eXaTIO3iI34Ytffifqb1LFUQ==", null, false, "3d6b24a1-34cd-4c51-a8b3-0e95f90d1dea", false, "admin@admin.com" },
-                    { "User1Id", 0, "127e7360-d8da-4ca6-858e-d14875e0ee90", null, false, false, null, null, null, null, null, false, "4e25dbfd-2d84-4ad0-a19c-75a8cc359d5e", false, null },
-                    { "User2Id", 0, "2b56befa-542e-49b6-b934-e8bd335bae82", null, false, false, null, null, null, null, null, false, "800ab933-679a-4a87-b5f3-8cd95639e1a7", false, null }
+                    { "11111111-1111-1111-1111-111111111111", 0, "f3945c03-0b06-4786-81ec-c5a406059950", "admin@admin.com", true, true, null, "ADMIN@ADMIN.COM", "ADMIN@ADMIN.COM", "AQAAAAIAAYagAAAAELTbBapV3pnRtkbFSpsTnu/h77R16Ff3Usikn+7QklJTK2qN86WP7Mzn1Ax9SgO81g==", null, false, "80536c45-dcbf-46d6-8dbd-063db81ce12f", false, "admin@admin.com" },
+                    { "User1Id", 0, "3d91cc90-8708-4af2-95ea-a0f80b38d39b", null, false, false, null, null, null, null, null, false, "196497f0-0474-400f-b995-8730ea439137", false, null },
+                    { "User2Id", 0, "d4fd0a5d-e5ec-4607-8e7e-05cc37726035", null, false, false, null, null, null, null, null, false, "4642cedd-9a34-4258-8ebf-ee159d34dcd4", false, null }
                 });
 
             migrationBuilder.InsertData(
