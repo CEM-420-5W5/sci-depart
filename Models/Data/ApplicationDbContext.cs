@@ -24,9 +24,6 @@ public class ApplicationDbContext : IdentityDbContext
         builder.Entity<IdentityRole>().HasData(Seed.SeedRoles());
         builder.Entity<IdentityUserRole<string>>().HasData(Seed.SeedUserRoles());
 
-        builder.Entity<IdentityUser>().HasData(Seed.SeedTestUsers());
-        builder.Entity<Player>().HasData(Seed.SeedTestPlayers());
-
         // Lorsque le modèle de données se complexifient, il faut éventuellement utiliser Fluent API
         // https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/fluent/types-and-properties
         // pour préciser certaines relations.
