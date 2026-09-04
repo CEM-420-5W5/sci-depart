@@ -25,6 +25,22 @@ namespace WebApi.Services
             // L'implémentation est la responsabilité de la personne en charge de la partie [Administration MVC]
             return 2;
         }
+
+        public int GetNbDecks()
+        {
+            // Stub: Pour l'intant, le stub retourne simplement 4
+            // L'implémentation réelle devra la valeur configué
+            // L'implémentation est la responsabilité de la personne en charge de la partie [Administration MVC]
+            return 4;
+        }
+
+        public int GetNbCardsPerDeck()
+        {
+            // Stub: Pour l'intant, le stub retourne simplement 12
+            // L'implémentation réelle devra la valeur configué
+            // L'implémentation est la responsabilité de la personne en charge de la partie [Administration MVC]
+            return 12;
+        }
     }
 }
 
