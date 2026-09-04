@@ -10,6 +10,8 @@ classDiagram
     Match "1..1" -- "2..2" MatchPlayerData
     PlayableCard "0..n" -- "1..1" MatchPlayerData : Hand/CardsPile/Graveyard/BattleField
     Card "0..n"  -- "1..1" PlayableCard
+    Player "1..1" -- "0..N" OwnedCard
+    Card "1..1" -- "0..N" OwnedCard
 
     class IdentityUser{
       string Id
@@ -59,6 +61,12 @@ classDiagram
       int Health
       int Cost
       string ImageURL
+    }
+
+    class OwnedCard{
+      int Id
+      &lt;FK&gt;int PlayerId
+      &lt;FK&gt;int CardId
     }
 
 ```
