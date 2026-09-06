@@ -19,7 +19,7 @@ namespace WebApi.Services
             {
                 Id = 0,
                 UserId = user.Id,
-                Name = user.Email!
+                Name = user.UserName!
             };
 
             // TODO: Utilisez le service StartingCardsService pour obtenir les cartes de départ
