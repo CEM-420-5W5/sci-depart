@@ -91,6 +91,51 @@ namespace Models.Data
                     Health = 1,
                     Cost = 2,
                     ImageUrl = "https://cdn.theatlantic.com/thumbor/fOZjgqHH0RmXA1A5ek-yDz697W4=/133x0:2091x1020/1200x625/media/img/mt/2015/12/RTRD62Q/original.jpg"
+                },
+                new Card
+                {
+                    Id = 11,
+                    Name = "Chat Empereur",
+                    Attack = 1,
+                    Health = 7,
+                    Cost = 1,
+                    ImageUrl = "https://i.pinimg.com/originals/49/49/ff/4949ff92e9282cbeb833a48da5796737.jpg"
+                },
+                new Card
+                {
+                    Id = 12,
+                    Name = "Chat Cone",
+                    Attack = 2,
+                    Health = 5,
+                    Cost = 1,
+                    ImageUrl = "https://i.redd.it/2nk3s12ldp051.jpg"
+                },
+                new Card
+                {
+                    Id = 13,
+                    Name = "Angry Cat",
+                    Attack = 6,
+                    Health = 3,
+                    Cost = 1,
+                    ImageUrl = "https://i.pinimg.com/236x/b5/15/95/b51595de229aaa7712279a7653c307f0.jpg"
+                },
+                new Card
+                {
+                    Id = 14,
+                    Name = "Chat Badass",
+                    Attack = 7,
+                    Health = 4,
+                    Cost = 1,
+                    ImageUrl = "https://media1.popsugar-assets.com/files/thumbor/6BHnROehp0ff478v0jQggBzcgQY/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2016/02/25/840/n/1922507/286cd284_edit_img_image_16472413_1456425450_cat/i/Koyuki-Japanese-Grumpy-Cat.jpg"
+                },
+                new Card
+                {
+                    Id = 15,
+                    Name = "Ninja Chat",
+                    Attack = 6,
+                    Health = 4,
+                    Cost = 1,
+                    ImageUrl = "https://moderncat.com/wp-content/uploads/2021/09/NinjaCats-5.jpg"
                 }
             ];
         }
