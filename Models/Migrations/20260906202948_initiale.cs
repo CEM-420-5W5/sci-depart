@@ -293,17 +293,12 @@ namespace Models.Migrations
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
-                values: new object[] { "11111111-1111-1111-1111-1111111111A1", "68b896d6-93d5-4011-b15b-d48a3b1f5ead", "admin", "ADMIN" });
+                values: new object[] { "11111111-1111-1111-1111-1111111111A1", "7ce3e159-83ad-4c0f-a8f4-1189193d9379", "admin", "ADMIN" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[,]
-                {
-                    { "11111111-1111-1111-1111-111111111111", 0, "c071c0ad-5c59-4b98-8d67-6bab45c9af78", "admin@sci.com", true, true, null, "ADMIN@SCI.COM", "ADMIN@SCI.COM", "AQAAAAIAAYagAAAAEJbuAeRZ+by/8iWz/ZwNVG8gmPcxWJvZhFEstozk8/5/GnXNIAI+SGzEsudvumqdDw==", null, false, "9b15c52f-8b03-409d-a9f4-10e08a8b8d25", false, "admin@sci.com" },
-                    { "User1Id", 0, "8d09ebb1-eabe-4baa-a485-6f2a674d4ea1", null, false, false, null, null, null, null, null, false, "89057ab9-ca24-4f69-8327-80ac30344a22", false, null },
-                    { "User2Id", 0, "33134217-a8a4-4831-bea2-49deb15ed51a", null, false, false, null, null, null, null, null, false, "6bf310e2-d746-4128-93b8-0d08b275199c", false, null }
-                });
+                values: new object[] { "11111111-1111-1111-1111-111111111111", 0, "d3124922-fb40-47eb-b6b5-db6213a75eed", "admin@sci.com", true, true, null, "ADMIN@SCI.COM", "ADMIN@SCI.COM", "AQAAAAIAAYagAAAAEFawAWbw7G7YIAyQuAEIHIoOJ5J85mIhLHDdZfXhf1o5tSq026wsioNSPV8bU7fyWQ==", null, false, "51b0b201-c3cc-4f37-ad35-2ee8d91e9b47", false, "admin@sci.com" });
 
             migrationBuilder.InsertData(
                 table: "Cards",
@@ -317,24 +312,20 @@ namespace Models.Migrations
                     { 5, 7, 5, 7, "https://i.etsystatic.com/6230905/r/il/32aa5a/3474618751/il_fullxfull.3474618751_mfvf.jpg", "Chat Guerrier" },
                     { 6, 4, 2, 2, "https://store.playstation.com/store/api/chihiro/00_09_000/container/AU/en/99/EP2402-CUSA05624_00-ETH0000000002875/0/image?_version=00_09_000&platform=chihiro&bg_color=000000&opacity=100&w=720&h=720", "Chat Laser" },
                     { 7, 6, 4, 3, "https://images.squarespace-cdn.com/content/51b3dc8ee4b051b96ceb10de/1394662654865-JKOZ7ZFF39247VYDTGG9/hilarious-jedi-cats-fight-video-preview.jpg?content-type=image%2Fjpeg", "Jedi Chat" },
-                    { 8, 1, 2, 9, "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c89c9a3c-7848-4bd5-9306-417c97096ae5/dh8sghm-7bebd975-51f2-4728-87bc-fb3cef176af5.jpg/v1/fit/w_750,h_1000,q_70,strp/another_lucifur_blob_by_slugyyycat_dh8sghm-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcL2M4OWM5YTNjLTc4NDgtNGJkNS05MzA2LTQxN2M5NzA5NmFlNVwvZGg4c2dobS03YmViZDk3NS01MWYyLTQ3MjgtODdiYy1mYjNjZWYxNzZhZjUuanBnIiwid2lkdGgiOiI8PTc1MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7oGugpkEX4yqfhiOXlo4TfqzatOuHaCu2aEi-Lnw_40", "Blob Chat" },
+                    { 8, 1, 2, 9, "https://i.redd.it/6ff6b2habfs41.jpg", "Blob Chat" },
                     { 9, 5, 2, 1, "https://townsquare.media/site/142/files/2011/08/jedicats.jpg?w=980&q=75", "Jedi Chatton" },
-                    { 10, 6, 2, 1, "https://cdn.theatlantic.com/thumbor/fOZjgqHH0RmXA1A5ek-yDz697W4=/133x0:2091x1020/1200x625/media/img/mt/2015/12/RTRD62Q/original.jpg", "Chat Furtif" }
+                    { 10, 6, 2, 1, "https://cdn.theatlantic.com/thumbor/fOZjgqHH0RmXA1A5ek-yDz697W4=/133x0:2091x1020/1200x625/media/img/mt/2015/12/RTRD62Q/original.jpg", "Chat Furtif" },
+                    { 11, 1, 1, 7, "https://i.pinimg.com/originals/49/49/ff/4949ff92e9282cbeb833a48da5796737.jpg", "Chat Empereur" },
+                    { 12, 2, 1, 5, "https://i.redd.it/2nk3s12ldp051.jpg", "Chat Cone" },
+                    { 13, 6, 1, 3, "https://i.pinimg.com/236x/b5/15/95/b51595de229aaa7712279a7653c307f0.jpg", "Angry Cat" },
+                    { 14, 7, 1, 4, "https://media1.popsugar-assets.com/files/thumbor/6BHnROehp0ff478v0jQggBzcgQY/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2016/02/25/840/n/1922507/286cd284_edit_img_image_16472413_1456425450_cat/i/Koyuki-Japanese-Grumpy-Cat.jpg", "Chat Badass" },
+                    { 15, 6, 1, 4, "https://moderncat.com/wp-content/uploads/2021/09/NinjaCats-5.jpg", "Ninja Chat" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[] { "11111111-1111-1111-1111-1111111111A1", "11111111-1111-1111-1111-111111111111" });
-
-            migrationBuilder.InsertData(
-                table: "Players",
-                columns: new[] { "Id", "Name", "UserId" },
-                values: new object[,]
-                {
-                    { 1, "Test player 1", "User1Id" },
-                    { 2, "Test player 2", "User2Id" }
-                });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

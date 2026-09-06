@@ -12,7 +12,7 @@ using Models.Data;
 namespace Models.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260903132603_initiale")]
+    [Migration("20260906202948_initiale")]
     partial class initiale
     {
         /// <inheritdoc />
@@ -58,7 +58,7 @@ namespace Models.Migrations
                         new
                         {
                             Id = "11111111-1111-1111-1111-1111111111A1",
-                            ConcurrencyStamp = "68b896d6-93d5-4011-b15b-d48a3b1f5ead",
+                            ConcurrencyStamp = "7ce3e159-83ad-4c0f-a8f4-1189193d9379",
                             Name = "admin",
                             NormalizedName = "ADMIN"
                         });
@@ -158,39 +158,17 @@ namespace Models.Migrations
                         {
                             Id = "11111111-1111-1111-1111-111111111111",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c071c0ad-5c59-4b98-8d67-6bab45c9af78",
+                            ConcurrencyStamp = "d3124922-fb40-47eb-b6b5-db6213a75eed",
                             Email = "admin@sci.com",
                             EmailConfirmed = true,
                             LockoutEnabled = true,
                             NormalizedEmail = "ADMIN@SCI.COM",
                             NormalizedUserName = "ADMIN@SCI.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEJbuAeRZ+by/8iWz/ZwNVG8gmPcxWJvZhFEstozk8/5/GnXNIAI+SGzEsudvumqdDw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFawAWbw7G7YIAyQuAEIHIoOJ5J85mIhLHDdZfXhf1o5tSq026wsioNSPV8bU7fyWQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9b15c52f-8b03-409d-a9f4-10e08a8b8d25",
+                            SecurityStamp = "51b0b201-c3cc-4f37-ad35-2ee8d91e9b47",
                             TwoFactorEnabled = false,
                             UserName = "admin@sci.com"
-                        },
-                        new
-                        {
-                            Id = "User1Id",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "8d09ebb1-eabe-4baa-a485-6f2a674d4ea1",
-                            EmailConfirmed = false,
-                            LockoutEnabled = false,
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "89057ab9-ca24-4f69-8327-80ac30344a22",
-                            TwoFactorEnabled = false
-                        },
-                        new
-                        {
-                            Id = "User2Id",
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "33134217-a8a4-4831-bea2-49deb15ed51a",
-                            EmailConfirmed = false,
-                            LockoutEnabled = false,
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "6bf310e2-d746-4128-93b8-0d08b275199c",
-                            TwoFactorEnabled = false
                         });
                 });
 
@@ -385,7 +363,7 @@ namespace Models.Migrations
                             Attack = 1,
                             Cost = 2,
                             Health = 9,
-                            ImageUrl = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c89c9a3c-7848-4bd5-9306-417c97096ae5/dh8sghm-7bebd975-51f2-4728-87bc-fb3cef176af5.jpg/v1/fit/w_750,h_1000,q_70,strp/another_lucifur_blob_by_slugyyycat_dh8sghm-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAwMCIsInBhdGgiOiJcL2ZcL2M4OWM5YTNjLTc4NDgtNGJkNS05MzA2LTQxN2M5NzA5NmFlNVwvZGg4c2dobS03YmViZDk3NS01MWYyLTQ3MjgtODdiYy1mYjNjZWYxNzZhZjUuanBnIiwid2lkdGgiOiI8PTc1MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7oGugpkEX4yqfhiOXlo4TfqzatOuHaCu2aEi-Lnw_40",
+                            ImageUrl = "https://i.redd.it/6ff6b2habfs41.jpg",
                             Name = "Blob Chat"
                         },
                         new
@@ -405,6 +383,51 @@ namespace Models.Migrations
                             Health = 1,
                             ImageUrl = "https://cdn.theatlantic.com/thumbor/fOZjgqHH0RmXA1A5ek-yDz697W4=/133x0:2091x1020/1200x625/media/img/mt/2015/12/RTRD62Q/original.jpg",
                             Name = "Chat Furtif"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            Attack = 1,
+                            Cost = 1,
+                            Health = 7,
+                            ImageUrl = "https://i.pinimg.com/originals/49/49/ff/4949ff92e9282cbeb833a48da5796737.jpg",
+                            Name = "Chat Empereur"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            Attack = 2,
+                            Cost = 1,
+                            Health = 5,
+                            ImageUrl = "https://i.redd.it/2nk3s12ldp051.jpg",
+                            Name = "Chat Cone"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            Attack = 6,
+                            Cost = 1,
+                            Health = 3,
+                            ImageUrl = "https://i.pinimg.com/236x/b5/15/95/b51595de229aaa7712279a7653c307f0.jpg",
+                            Name = "Angry Cat"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            Attack = 7,
+                            Cost = 1,
+                            Health = 4,
+                            ImageUrl = "https://media1.popsugar-assets.com/files/thumbor/6BHnROehp0ff478v0jQggBzcgQY/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2016/02/25/840/n/1922507/286cd284_edit_img_image_16472413_1456425450_cat/i/Koyuki-Japanese-Grumpy-Cat.jpg",
+                            Name = "Chat Badass"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            Attack = 6,
+                            Cost = 1,
+                            Health = 4,
+                            ImageUrl = "https://moderncat.com/wp-content/uploads/2021/09/NinjaCats-5.jpg",
+                            Name = "Ninja Chat"
                         });
                 });
 
@@ -537,20 +560,6 @@ namespace Models.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("Players");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Test player 1",
-                            UserId = "User1Id"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Test player 2",
-                            UserId = "User2Id"
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

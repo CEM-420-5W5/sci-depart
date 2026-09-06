@@ -14,15 +14,15 @@ namespace WebApi.Services
 
         public IEnumerable<OwnedCard> GetPlayersCards(string userId)
         {
-            // Stub: Pour l'intant, le stub retourne simplement 2 copies des 8 premières cartes
+            // Stub: Pour l'intant, le stub retourne simplement 2 copies des 10 premières cartes
             // L'implémentation réelle devra utiliser un service et retourner les cartes qu'un joueur possède
             // L'implémentation est la responsabilité de la personne en charge des [cartes]
-            var cards = _dbContext.Cards.Take(8);
-            cards = cards.Concat(cards);
+            var cards = _dbContext.Cards.Take(10).ToList();
+            var playersCards = cards.Concat(cards);
 
             // Pour l'instant on utilise l'index comme Id pour que chaque OwnedCard est un Id différent
             // Le champ player n'est pas utile pour l'instant, mais il devra être bien utilisé dans la vrai implémentation
-            var ownedCards = cards.Select((card, index) => new OwnedCard() { Card = card, Id = index + 1 }).ToList();
+            var ownedCards = playersCards.Select((card, index) => new OwnedCard() { Card = card, Id = index + 1 }).ToList();
             
             return ownedCards;
         }
